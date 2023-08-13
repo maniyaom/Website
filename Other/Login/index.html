@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validation</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body style="height:100vh; display: flex; justify-content: center; align-items: center;">
+    <div id="loginDiv">
+        <h2 style="margin: 20px 0px; text-align: center; font-family: 'Noto Sans', sans-serif;">Login to your Account</h2>
+        <table style="margin-left: auto; margin-right: auto;">
+            <tr>
+                <td><label for="username" class="inputLabel">Username : </label></td>
+                <td><input type="text" id="username" class="inputField"></td>
+            </tr>
+
+            <tr>
+                <td><label for="password" class="inputLabel">Password : </label></td>
+                <td><input type="password" id="password" class="inputField"></td>
+            </tr>
+            <tr>
+                <td id="usernameOrPassError" colspan="2">Invalid Username Or Password</td>
+            </tr>
+
+            <tr>
+                <td colspan="2" style="position:relative; text-align: right; top: -19px;"><a href="forgotPassword.html" id="forgotpasswordLink">Forgot Password ?</a></td>
+            </tr>
+
+            <tr>
+                <td colspan="2" style="position:relative; text-align: right; top: 7px;"><button type="submit" onclick="validateUser()" id="btn">Login</button></td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

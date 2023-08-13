@@ -1,0 +1,71 @@
+:root{
+    --btn_color : #1A8917;
+    --default_font : 'Noto Sans', sans-serif;
+}
+*{
+    margin: 0 0;
+}
+body{
+    background-color: antiquewhite;
+}
+
+#loginDiv{
+    border: 1px solid var(--btn_color);
+    background-color: #e6fae6;
+    width: 28%;
+    height: 44%;
+}
+
+#btn{
+    width: 100%;
+    height: 40px;
+    padding: 5px 10px;
+    background-color: var(--btn_color);
+    border: 1px solid var(--btn_color);
+    border-radius: 10px;
+    color: white;
+    font-family: var(--default_font);
+    font-size: medium;
+}
+#btn:hover{
+    cursor: pointer;
+    color: var(--btn_color);
+    background-color: white;
+    border-color: var(--btn_color);
+    transition-duration: 0.4s;
+}
+.inputLabel{
+    font-family: var(--default_font);
+    font-size: large;
+}
+.inputField {
+    height: 11px;
+    width: 183px;
+    margin-left: 20px;
+    padding: 9px 8px;
+    font-family: var(--default_font);
+    font-size: medium;
+    outline: none;
+}
+#usernameOrPassError {
+    color: red;
+    font-size: small;
+    font-family: var(--default_font);
+    margin: 4px 82px;
+    opacity: 1;
+    text-align: right;
+    position: relative;
+    right: 11px;
+    opacity: 0;
+}
+
+#forgotpasswordLink{
+    color: darkblue;
+    text-decoration: none;
+    font-family: var(--default_font);
+    font-size: small;
+}
+
+#forgotpasswordLink:hover,#forgotpasswordLink:visited:hover{
+    text-decoration: underline;
+}
